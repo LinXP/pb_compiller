@@ -10,7 +10,7 @@ runs:
     - name: Install Compiler Toolkit
       run: ${{ github.action_path }}/install.ps1
       shell: pwsh
-    - name: Install Compiler Toolkit
+    - name: Test env
       run: echo github.action_path    : ${{github.action_path}}
       run: echo env.GITHUB_WORKSPACE  : ${{env.GITHUB_WORKSPACE}}
       run: echo env.SOLUTION_FILE_PATH  : ${{env.SOLUTION_FILE_PATH}}
