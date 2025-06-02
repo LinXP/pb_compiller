@@ -1,0 +1,12 @@
+name: Setup PB compeller
+description: 'Windows setup "Autoit Compiler Toolkit"'
+branding:
+  icon: "package"
+  color: "blue"
+
+runs:
+  using: "composite"
+  steps:
+    - name: Install Compiler Toolkit
+      run: ${{ github.action_path }}/install.ps1
+      shell: pwsh
