@@ -7,18 +7,7 @@ branding:
 runs:
   using: "composite"
   steps:
-    - name: Test env
-      run: |
-       echo github.action_path    : ${{github.action_path}}
-       echo env.GITHUB_WORKSPACE  : ${{env.GITHUB_WORKSPACE}}
-       echo env.SOLUTION_FILE_PATH  : ${{env.SOLUTION_FILE_PATH}}
-      shell: pwsh
-
-    - name: test wget
-      run: wget -v
-      shell: pwsh
-
-      
+    
     - name: Install Compiler Toolkit
       run: ${{ github.action_path }}/install.ps1
       shell: pwsh
